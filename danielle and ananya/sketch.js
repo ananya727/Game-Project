@@ -8,7 +8,7 @@ let point;
 let me;
 
 function preload() {
-  wizard = loadImage('sprites/sprite 1.png');
+  wizard = loadAnimation('sprites/sprite 1.png', 'sprites/sprite 2.png');
   //princess = loadImage('Princess.png');
 }
 
@@ -57,7 +57,8 @@ class Avatar {
 	}
 
 	drawMe(){  // draw the running person
-        image(wizard, this.x-75, this.y-20, 75, 75);
+        animation(wizard, this.x-75, this.y-20,75,  75);
+
         // stroke("green");
         // strokeWeight(3);
     		// fill("blue");
